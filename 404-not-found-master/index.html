@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <title>Devchallenges</title>
+
+    <style>
+      body {
+        font-family: 'Space Mono', monospace;
+        margin: 0 0;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 5vw;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 50vw;
+      }
+
+      .main {
+        height: calc(100vh - 6vh);
+        padding: 3vh 4vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .not-found {
+        margin: 0 0 8vh;
+        font-family: 'Inconsolata', monospace;
+        text-transform: uppercase;
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .info__text {
+        padding-right: 40%;
+        font-size: 2vw;
+        color: #4f4f4f;
+      }
+
+      .info__btn {
+        background-color: #333333;
+        color: white;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        border: unset;
+        font-size: 14px;
+        margin-top: 5vh;
+      }
+
+      .credits {
+        margin-top: 8vh;
+        align-self: center;
+      }
+
+      a {
+        padding: 20px 40px;
+        background-color: #333333;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 48px;
+          letter-spacing: -0.035em;
+        }
+
+        .not-found {
+          font-size: 24px;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .info__text {
+          font-size: 18px;
+          letter-spacing: -0.035em;
+          padding-right: 10%;
+        }
+
+        .info__btn {
+          font-size: 14px;
+        }
+
+        .credits {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <p class="not-found">
+        404 not found
+      </p>
+      
+      <div class="info">
+        <div>
+          <img src="Scarecrow.png" alt="">
+        </div>
+        <div>
+          <h1>I have bad news for you</h1>
+          <p class="info__text">The page you are looking for might be romoved or is temporarily unavailable</p>
+          <button class="info__btn">Back to homepage</button>
+        </div>
+      </div>
+  
+      <div class="credits">
+        Łukasz Raubo @ Devchallenges.io
+      </div>
+    </main>
+  </body>
+</html>
