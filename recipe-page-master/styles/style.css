@@ -1,0 +1,275 @@
+body {
+  margin: 1vh 3vw 1vh 3vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.main {
+  display: grid;
+  gap: 20px;
+}
+
+.header__title {
+  font-size: 24px;
+}
+
+.material-icons.orange600 {
+  color: #FB8C00;
+}
+
+.appetizer {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.appetizer__icon {
+  padding-top: 5px;
+}
+
+.appetizer * {
+  margin: 0;
+}
+
+.appetizer__text {
+  font-weight: 500;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 26px);
+  gap: 20px;
+}
+
+.info > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.info span {
+  margin-right: 5px;
+}
+
+.info__title, .info__text {
+  margin: 0 0;
+}
+
+.info__yields {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.info__title {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 9.75px;
+  text-transform: capitalize;
+}
+
+.info__text {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.info--graytext {
+  color: #BDBDBD;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+} 
+
+.ingredients__header__title {
+  font-size: 18px;
+}
+
+.ingredients__ingredient__title {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.ingredients__ingredient__list {
+  margin-bottom: 30px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.ingredients__ingredient__list > li {
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 31px;
+  padding-bottom: 8px;
+}
+
+.ingredients__ingredient__list__checkbox {
+	-webkit-appearance: none;
+	border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  margin-left: -31px;
+  height: 21px;
+  width: 21px;
+	border-radius: 4px;
+	display: inline-block;
+	position: absolute;
+}
+
+.ingredients__ingredient__list__checkbox:active,
+.ingredients__ingredient__list__checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.ingredients__ingredient__list__checkbox:checked {
+	background-color: #e9ecee;
+	color: #99a1a7;
+}
+
+.ingredients__ingredient__list__checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #F2994A;
+}
+
+.instructions__list {
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 24px;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.instructions__list > li{
+  padding-bottom: 20px;
+  padding-left: 41px;
+  counter-increment: my-awesome-counter;
+}
+.instructions__list > li::before {
+  width: 36px;
+  height: 36px;
+  margin-left: -41px;
+  position: absolute;
+  content: counter(my-awesome-counter) "";
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  background: #F2994A;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-top: calc((36px - 24px) / 2);
+}
+
+.source {
+  margin-bottom: 40px;
+  color: #BDBDBD;
+}
+
+.footer {
+  color: #A9A9A9;
+  text-align: center;
+}
+
+
+@media (min-width: 800px) {
+  body {
+    margin: 1vh 15vw;
+    max-width: 1100px;
+  }
+
+  .main {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "appetizer appetizer"
+      "pic pic"
+      "ingredients info"
+      "instructions ."
+      "source source";
+  }
+
+  .header__title {
+    font-size: 48px;
+  }
+
+  .appetizer {
+    grid-area: appetizer;
+    max-width: 65ch;
+    margin-bottom: 2vh;
+  }
+
+  .pic {
+    grid-area: pic;
+  }
+
+  .appetizer__text {
+    font-size: 14px;
+  }
+
+  .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: max-content;
+    padding: 40px 50px 30px 40px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    justify-self: end;
+  }
+
+  .info__title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9.75px;
+    text-transform: capitalize;
+  }
+  
+  .info__text {
+    font-size: 14px;
+    line-height: normal
+  }
+
+  .ingredients {
+    grid-area: ingredients;
+    line-height: normal;
+  }
+
+  .ingredients__header__title {
+    font-size: 24px;
+  }
+  
+  .ingredients__ingredient__title {
+    font-size: 18px;
+  }
+
+  .ingredients__ingredient__list > li {
+    font-size: 16px;
+  }
+
+  .instructions {
+    grid-area: instructions;
+  }
+
+  .insctructions__header__title {
+    font-size: 24px;
+  }
+
+  .instructions__list * {
+    font-size: 16px;
+  }
+
+  .source {
+    grid-area: source;
+  }
+}
