@@ -18,6 +18,7 @@ body {
 .about__description {
   font-size: 18px;
   line-height: 27px;
+  margin-bottom: 96px;
 }
 
 .team {

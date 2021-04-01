@@ -92,12 +92,13 @@ body {
 }
 
 .footer {
+  margin-top: 130px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 17px;
   text-align: center;
   color: var(--gray);
-  margin-top: 130px;
+  align-self: end;
 }
 
 .footer--fw700 {
