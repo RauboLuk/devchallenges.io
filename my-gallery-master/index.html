@@ -14,10 +14,55 @@
     />
   </head>
   <body>
-    <header>
-      <img src="./images/profilePhoto.png" alt="profile" />
+    <header class="header">
+      <img
+        class="header__avatar"
+        src="./images/profilePhoto.png"
+        alt="profile"
+      />
+      <h1 class="header__name">Rodney Cotton</h1>
+      <p class="header__place">Helsinki, Finland</p>
     </header>
+    <section class="stats">
+      <article class="stats__box">
+        <p class="stats__counter">100</p>
+        <p class="stats__description">Posts</p>
+      </article>
+      <article class="stats__box">
+        <p class="stats__counter">2,242</p>
+        <p class="stats__description">Followers</p>
+      </article>
+      <article class="stats__box">
+        <p class="stats__counter">1,432</p>
+        <p class="stats__description">Following</p>
+      </article>
+    </section>
+    <section class="images">
+      <img class="images__item" src="./images/photo1.png" alt="" />
+      <img
+        class="images__item images__item--columnSpan2"
+        src="./images/photo2.png"
+        alt=""
+      />
+      <img
+        class="images__item images__item--columnSpan2"
+        src="./images/photo3.png"
+        alt=""
+      />
+      <div class="images__item images__item--rowSpan2 images__item--hiddenOf">
+        <img
+          class="test"
+          src="./images/photo4.png"
+          alt=""
+        />
 
-    <footer>created by <span>& Raubo</span> - devChallenges.io</footer>
+      </div>
+      <img class="images__item" src="./images/photo5.png" alt="" />
+      <img class="images__item" src="./images/photo6.png" alt="" />
+    </section>
+
+    <footer class="footer">
+      created by <span class="">& Raubo</span> - devChallenges.io
+    </footer>
   </body>
 </html>
