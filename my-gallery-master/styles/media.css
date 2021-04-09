@@ -1,0 +1,56 @@
+/* HEADER */
+.header {
+  margin-top: 60px;
+}
+
+.header__avatar {
+  width: 156px;
+  height: 156px;
+}
+
+.header__name {
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 16px;
+}
+
+.header__place {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* STATS */
+.stats {
+  margin-top: 24px;
+  margin-bottom: 64px;
+  gap: 24px;
+}
+
+.stats__box {
+  width: 100px;
+  height: 67px;
+  gap: 3px;
+}
+
+.stats__counter {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.stats__description {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* IMAGES */
+.images {
+  gap: 30px;
+  grid-template-columns: repeat(3, min(300px, 25vw));
+  grid-template-rows: min(300px, 25vw);
+  grid-auto-rows: min(300px, 25vw);
+  margin-bottom: 130px;
+}
+
+.images__image4 {
+  object-position: -5px -1px;
+}
