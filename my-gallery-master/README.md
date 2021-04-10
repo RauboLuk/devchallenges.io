@@ -30,13 +30,13 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
 ![screenshot](../assets/2021-04-09_My_gallery.png)
+ETC: ~3.5h
 
 ### Built With
 
