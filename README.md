@@ -6,6 +6,7 @@
 - [Recipe page](#4)
 - [404 Not Found](#5)
 - [Contact](#Contact)
+- [About](#About)
 
 
 <br />
@@ -14,10 +15,6 @@
 <h1 align="center" id="myTeamPage">Gallery</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
-
-<div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
-</div>
 
 <div align="center">
   <h3>
@@ -154,3 +151,8 @@
 
 - GitHub [@RauboLuk](https://github.com/RauboLuk)
 - Stack Overflow [@RauboLuk](https://stackoverflow.com/users/9185799/rauboluk)
+
+</br>
+
+## About
+Pages above are solutions to a challenges from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
