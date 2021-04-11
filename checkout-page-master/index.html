@@ -19,7 +19,55 @@
     />
   </head>
   <body>
-    <h1>Checkout</h1>
+    <header class="header">
+      <h1>Checkout</h1>
+    </header>
+    <main>
+      <article class="cart">
+        <section class="cart__summary">
+          <section class="cart__items">
+            <section class="cart__item">
+              <img
+                src="./images/photo1.png"
+                alt="backpack"
+                class="cart__image"
+              />
+              <section class="cart__itemDetails">
+                <div class="cart__itemName">Vintage Backbag</div>
+                <div class="cart__priceSection">
+                  <div class="cart__itemPrice">$54.99</div>
+                  <div class="cart__itemDiscount">$94.99</div>
+                </div>
+                <div class="cart__quantityBox">
+                  <div class="cart__button">
+                    <span class="material-icons md-18">remove</span>
+                  </div>
+                  <input
+                    type="number"
+                    name="bp-quantity"
+                    class="cart__itemQuantity"
+                    value="1"
+                    min="0"
+                    max="100"
+                  />
+                  <div class="cart__button">
+                    <span class="material-icons md-18"> add </span>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+          <section class="cart_textbox">
+            <p>Shipping</p>
+            <p>$19</p>
+          </section>
+          <section class="cart_textbox">
+            <p>Total</p>
+            <p>$148.98</p>
+          </section>
+        </section>
+      </article>
+    </main>
     <footer class="footer">
       created by <span class="footer--fw700 footer--underline">& Raubo</span> -
       <span class="footer--fw500">devChallenges.io</span>
