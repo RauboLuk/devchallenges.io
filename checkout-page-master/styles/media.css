@@ -1,0 +1,135 @@
+html {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px;
+}
+
+/* HEADER */
+.header {
+  margin: 0 auto 50px;
+  max-width: 960px;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+/* MAIN */
+.main {
+  max-width: 960px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/* FORM */
+.form {
+  margin: 0 10px 100px 0;
+  max-width: 465px;
+}
+
+.form__entry {
+  margin-bottom: 20px;
+}
+
+.form__title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 7px;
+}
+
+.form__inputBox {
+  width: 465px;
+  height: 56px;
+  max-width: 100%;
+  padding: 0 14px;
+  gap: 13px;
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__address {
+  margin-top: 50px;
+}
+
+.form__checkbox {
+  width: 21px;
+  height: 21px;
+}
+
+.form__checkbox:checked:after {
+  font-size: 17px;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+}
+
+.form__checkboxLabel {
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 11px;
+}
+
+/* CART */
+.cart {
+  width: 40vw;
+  max-width: 383px;
+  margin: 30px 10px;
+  padding: 33px 36px 20px 30px;
+  align-self: start;
+}
+
+.cart__items {
+  gap: 30px;
+  margin-bottom: 95px;
+}
+
+.cart__item {
+  gap: 20px;
+}
+
+.cart__image {
+  width: 134.21px;
+  height: 136.27px;
+}
+
+.cart__itemName {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cart__priceSection {
+  width: initial;
+  gap: 10px;
+  justify-content: initial;
+}
+
+.cart__itemDiscount {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.cart_textbox {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cart_shippingCost,
+.cart_totalCost {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 14px;
+  line-height: 17px;
+}

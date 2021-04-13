@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dropdown.css" />
     <link rel="stylesheet" media="(min-width: 768px)" href="styles/media.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -22,9 +23,8 @@
     <header class="header">
       <h1>Checkout</h1>
     </header>
-    <main>
+    <form action="" method="post" class="main">
       <article class="cart">
-        <section class="cart__summary">
           <section class="cart__items">
             <section class="cart__item">
               <img
@@ -49,7 +49,8 @@
                     value="1"
                     min="0"
                     max="999"
-                    placeholder="qty..."
+                    placeholder="qty.."
+                    required
                   />
                   <div class="cart__button">
                     <span class="material-icons md-18"> add </span>
@@ -76,7 +77,8 @@
                     value="1"
                     min="0"
                     max="999"
-                    placeholder="qty..."
+                    placeholder="qty.."
+                    required
                   />
                   <div class="cart__button">
                     <span class="material-icons md-18"> add </span>
@@ -87,15 +89,14 @@
           </section>
           <section class="cart_textbox">
             <p>Shipping</p>
-            <p>$19</p>
+            <p class="cart_shippingCost">$19</p>
           </section>
           <section class="cart_textbox">
             <p>Total</p>
-            <p>$148.98</p>
+            <p class="cart_totalCost">$148.98</p>
           </section>
-        </section>
       </article>
-      <form action="" method="post" class="form">
+      <section action="" method="post" class="form">
         <section class="form__contact">
           <h1 class="form__title">Contact infomation</h1>
           <section class="form__entry">
@@ -171,12 +172,55 @@
               />
             </div>
           </section>
+          <section class="form__twoRows">
+            <section class="form__entry">
+              <label for="country" class="form__label">Country</label>
+              <div class="form__inputBox">
+                <span class="material-icons md-18 gray3"> location_city </span>
+                <div class="form__dropdownBox form__input--2rowsWidth">
+                  <select class="form_countries" required>
+                    <option value="" selected>Your country..</option>
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Norway">Norway</option>
+                  </select>
+                  <span class="material-icons md-18 gray3"> expand_more </span>
+                </div>
+              </div>
+            </section>
+            <section class="form__entry">
+              <label for="code" class="form__label">Postal code</label>
+              <div class="form__inputBox">
+                <span class="material-icons md-18 gray3">
+                  markunread_mailbox
+                </span>
+                <input
+                  type="text"
+                  name="code"
+                  id="code"
+                  placeholder="Your postal code.."
+                  required
+                  class="form__input form__input--2rowsWidth"
+                />
+              </div>
+            </section>
+          </section>
+          <section class="form__entry form__entry--checkbox">
+            <input
+              type="checkbox"
+              name="saveInfo"
+              id="saveInfo"
+              class="form__checkbox"
+            />
+            <label for="saveInfo" class="form__checkboxLabel"
+              >Save this information for next time</label
+            >
+          </section>
         </section>
-        <div class="form-example">
-          <input type="submit" value="Subscribe!" />
-        </div>
-      </form>
-    </main>
+        <input type="submit" value="Continue" class="form-button" />
+      </section>
+    </form>
     <footer class="footer">
       created by <span class="footer--fw700 footer--underline">& Raubo</span> -
       <span class="footer--fw500">devChallenges.io</span>

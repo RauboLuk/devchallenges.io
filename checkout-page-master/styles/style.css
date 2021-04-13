@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  padding: 32px 13px 30px;
+  padding: 32px 0;
   position: relative;
 }
 
@@ -78,17 +78,19 @@ input:focus {
   margin-bottom: 20px;
 }
 
-/* CART */
-.cart {
-  margin: 30px auto;
-  padding: 30px 24px 13px;
+/* MAIN */
+.main {
+  margin: 0 auto;
   max-width: 350px;
   min-width: 300px;
-  background: var(--gray6);
-  border-radius: 12px;
 }
 
-.cart__summary {
+/* CART */
+.cart {
+  margin-top: 30px;
+  padding: 30px 24px 13px;
+  background: var(--gray6);
+  border-radius: 12px;
 }
 
 .cart__items {
@@ -184,10 +186,13 @@ input:focus {
 /* FORM */
 
 .form {
-  margin: 0 auto;
-  padding: 30px 24px 13px;
+  margin: 0 auto 90px;
+  padding: 30px 0 13px;
   max-width: 350px;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .form__entry {
@@ -238,12 +243,80 @@ input:focus {
   color: var(--gray3);
 }
 
+.form__address {
+  margin-top: 40px;
+}
+
+.form__twoRows {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  gap: 5%;
+}
+
+.form__input--2rowsWidth {
+  width: 85%;
+}
+
+.form__entry--checkbox {
+  display: flex;
+  align-content: center;
+}
+
+.form__checkbox {
+  margin: 0;
+
+  width: 16px;
+  height: 15px;
+  position: relative;
+  -webkit-appearance: none;
+  border: 1px solid var(--gray3);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form__checkbox:focus {
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+}
+
+.form__checkbox:checked:after {
+  content: "\2714";
+  font-size: 13px;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  color: var(--orange);
+}
+
+.form__checkboxLabel {
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--gray2);
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.form-button {
+  width: 166px;
+  height: 54px;
+  background: var(--orange);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  align-self: flex-end;
+}
+.form-button:focus {
+  border: 2px solid var(--gray3);
+}
+
 /* FOOTER */
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 32px;
   color: var(--gray4);
   text-align: center;
 }
