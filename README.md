@@ -1,17 +1,20 @@
 # Table of Contents
+
 ###### 0
+
 - [Gallery](#1)
 - [Team page](#2)
-- [Interior consultant](#3)
-- [Recipe page](#4)
-- [404 Not Found](#5)
+- [Checkout page](#3)
+- [Interior consultant](#4)
+- [Recipe page](#5)
+- [404 Not Found](#6)
 - [Contact](#Contact)
 - [About](#About)
-
 
 <br />
 
 ###### 1
+
 <h1 align="center" id="myTeamPage">Gallery</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
@@ -39,6 +42,7 @@
 <br /><br />
 
 ###### 2
+
 <h1 align="center" id="myTeamPage">Team page</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
@@ -66,6 +70,35 @@
 <br /><br />
 
 ###### 3
+
+<h1 align="center" id="myTeamPage">Checkout page</h1>
+
+<div align="right"><a href="#0">Top ↑</a></div>
+
+<div align="center">
+  <h3>
+    <a href="https://amused-chain.surge.sh/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/RauboLuk/devchallenges.io/tree/master/checkout-page-master">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
+      Challenge
+    </a>
+  </h3>
+</div>
+
+## Overview
+
+![screenshot](./assets/2021-04-13_Checkout_page.png)
+
+<br /><br />
+
+###### 4
+
 <h1 align="center" id="myTeamPage">Interior consultant</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
@@ -92,7 +125,8 @@
 
 <br /><br />
 
-###### 4
+###### 5
+
 <h1 align="center" id="myTeamPage">Recipe page</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
@@ -119,7 +153,8 @@
 
 <br /><br />
 
-###### 5
+###### 6
+
 <h1 align="center" id="myTeamPage">404 Not Found</h1>
 
 <div align="right"><a href="#0">Top ↑</a></div>
@@ -147,6 +182,7 @@
 <br /><br />
 
 # Contact
+
 <div align="right"><a href="#0">Top ↑</a></div>
 
 - GitHub [@RauboLuk](https://github.com/RauboLuk)
@@ -155,4 +191,5 @@
 </br>
 
 ## About
-Pages above are solutions to a challenges from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+
+Pages above are solutions to a challenges from <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
