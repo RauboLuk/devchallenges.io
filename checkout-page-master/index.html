@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -25,76 +26,82 @@
     </header>
     <form action="" method="post" class="main">
       <article class="cart">
-          <section class="cart__items">
-            <section class="cart__item">
-              <img
-                src="./images/photo1.png"
-                alt="backpack"
-                class="cart__image"
-              />
-              <section class="cart__itemDetails">
-                <div class="cart__itemName">Vintage Backbag</div>
-                <div class="cart__priceSection">
-                  <div class="cart__itemPrice">$54.99</div>
-                  <div class="cart__itemDiscount">$94.99</div>
+        <section class="cart__items">
+          <section class="cart__item">
+            <img src="./images/photo1.png" alt="backpack" class="cart__image" />
+            <section class="cart__itemDetails">
+              <div class="cart__itemName">Vintage Backbag</div>
+              <div class="cart__priceSection">
+                <div class="cart__itemPrice">$54.99</div>
+                <div class="cart__itemDiscount">$94.99</div>
+              </div>
+              <section class="cart__quantityBox">
+                <div class="cart__button">
+                  <span class="material-icons md-18" data-change="dec"
+                    >remove</span
+                  >
                 </div>
-                <section class="cart__quantityBox">
-                  <div class="cart__button">
-                    <span class="material-icons md-18">remove</span>
-                  </div>
-                  <input
-                    type="number"
-                    name="bp-quantity"
-                    class="cart__itemQuantity"
-                    value="1"
-                    min="0"
-                    max="999"
-                    placeholder="qty.."
-                    required
-                  />
-                  <div class="cart__button">
-                    <span class="material-icons md-18"> add </span>
-                  </div>
-                </section>
-              </section>
-            </section>
-            <section class="cart__item">
-              <img src="./images/photo2.png" alt="shoes" class="cart__image" />
-              <section class="cart__itemDetails">
-                <div class="cart__itemName">Levi Shoes</div>
-                <div class="cart__priceSection">
-                  <div class="cart__itemPrice">$74.99</div>
-                  <div class="cart__itemDiscount">$124.99</div>
+                <input
+                  type="number"
+                  name="bp-quantity"
+                  class="cart__itemQuantity"
+                  value="1"
+                  min="0"
+                  max="999"
+                  placeholder="qty.."
+                  required
+                  data-price="54.99"
+                />
+                <div class="cart__button">
+                  <span class="material-icons md-18" data-change="inc">
+                    add
+                  </span>
                 </div>
-                <section class="cart__quantityBox">
-                  <div class="cart__button">
-                    <span class="material-icons md-18">remove</span>
-                  </div>
-                  <input
-                    type="number"
-                    name="bp-quantity"
-                    class="cart__itemQuantity"
-                    value="1"
-                    min="0"
-                    max="999"
-                    placeholder="qty.."
-                    required
-                  />
-                  <div class="cart__button">
-                    <span class="material-icons md-18"> add </span>
-                  </div>
-                </section>
               </section>
             </section>
           </section>
-          <section class="cart_textbox">
-            <p>Shipping</p>
-            <p class="cart_shippingCost">$19</p>
+          <section class="cart__item">
+            <img src="./images/photo2.png" alt="shoes" class="cart__image" />
+            <section class="cart__itemDetails">
+              <div class="cart__itemName">Levi Shoes</div>
+              <div class="cart__priceSection">
+                <div class="cart__itemPrice">$74.99</div>
+                <div class="cart__itemDiscount">$124.99</div>
+              </div>
+              <section class="cart__quantityBox">
+                <div class="cart__button">
+                  <span class="material-icons md-18" data-change="dec"
+                    >remove</span
+                  >
+                </div>
+                <input
+                  type="number"
+                  name="bp-quantity"
+                  class="cart__itemQuantity"
+                  value="1"
+                  min="0"
+                  max="999"
+                  placeholder="qty.."
+                  required
+                  data-price="74.99"
+                />
+                <div class="cart__button">
+                  <span class="material-icons md-18" data-change="inc">
+                    add
+                  </span>
+                </div>
+              </section>
+            </section>
           </section>
-          <section class="cart_textbox">
-            <p>Total</p>
-            <p class="cart_totalCost">$148.98</p>
-          </section>
+        </section>
+        <section class="cart_textbox">
+          <p>Shipping</p>
+          <p class="cart_shippingCost" data-price="19">$19</p>
+        </section>
+        <section class="cart_textbox">
+          <p>Total</p>
+          <p class="cart_totalCost">$148.98</p>
+        </section>
       </article>
       <section action="" method="post" class="form">
         <section class="form__contact">
@@ -121,6 +128,8 @@
                 type="tel"
                 name="tel"
                 id="tel"
+                pattern="\d{5,}"
+                title="Only numbers are allowed, min length 5"
                 placeholder="Enter your phone..."
                 required
                 class="form__input"
@@ -138,6 +147,8 @@
                 type="text"
                 name="name"
                 id="name"
+                pattern="^[\w\- ]{3,}$"
+                title="Allowed chars a-z, A-Z, -, space, min length 3"
                 placeholder="Your name.."
                 required
                 class="form__input"
@@ -152,6 +163,8 @@
                 type="text"
                 name="address"
                 id="address"
+                pattern="^[\w\- ]{3,}$"
+                title="Allowed chars a-z, A-Z, -, space, min length 3"
                 placeholder="Your address.."
                 required
                 class="form__input"
@@ -166,6 +179,8 @@
                 type="text"
                 name="city"
                 id="city"
+                pattern="^[\w\- ]{3,}$"
+                title="Allowed chars a-z, A-Z, -, space, min length 3"
                 placeholder="Your city.."
                 required
                 class="form__input"
@@ -199,6 +214,8 @@
                   type="text"
                   name="code"
                   id="code"
+                  pattern="^[\w\- ]{3,}$"
+                  title="Allowed chars a-z, A-Z, -, space, min length 3"
                   placeholder="Your postal code.."
                   required
                   class="form__input form__input--2rowsWidth"
