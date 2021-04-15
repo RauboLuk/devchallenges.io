@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edie homepage</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" media="(min-width: 768px)" href="styles/media.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;700&display=swap"
@@ -13,14 +16,43 @@
   </head>
   <body>
     <header class="header">
-      <h1>Edie</h1>
-      <nav role="navigation">
-        <a href="#home">HomeContact</a>
-        <a href="#services">Services</a>
-        <a href="#ourWorks">Our Works</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+      <h1 class="header__title">Edie</h1>
+      <nav role="navigation" class="header__nav">
+        <a href="#hero" class="header__link">Home</a>
+        <a href="#services" class="header__link">Services</a>
+        <a href="#ourWorks" class="header__link">Our Works</a>
+        <a href="#clients" class="header__link">Clients</a>
+        <a href="#contact" class="header__link">Contact</a>
       </nav>
     </header>
+    <article id="hero" class="hero">
+      <header class="hero__header">
+        <p class="hero__subtitle">Unhappy with your website?</p>
+        <h1 class="hero__title">We create beautiful and fast web services</h1>
+      </header>
+      <section>
+        <img src="./images/heroImage.jpg" alt="team" class="hero__img" />
+        <section class="hero__content">
+          <h2 class="hero__title">Story, emotion and purpose</h2>
+          <p class="hero__about">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <form action="" method="post">
+            <label for="contactMail">Want us to contact you?</label>
+            <div class="hero__inputBox">
+              <input
+                type="email"
+                name="contactMail"
+                placeholder="Email"
+                class="hero__input"
+              />
+              <button type="submit" class="hero__button">Join</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </article>
   </body>
 </html>

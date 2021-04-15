@@ -1,7 +1,7 @@
 :root {
-  --blue: #2D9CDB;
-  --green: #27AE60;
-  --navy: #100E1D;
+  --blue: #2d9cdb;
+  --green: #27ae60;
+  --navy: #100e1d;
   --red: #c74c34;
   --gray1: #333333;
   --gray2: #4f4f4f;
@@ -13,10 +13,10 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
+  cursor: default;
 }
 
 *,
@@ -27,7 +27,7 @@ html {
 
 body {
   min-height: calc(100vh - 100px);
-  margin: 50px;
+  margin: 13px 14px 50px 10px;
 }
 
 h1,
@@ -38,4 +38,134 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--gray3);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--gray6);
+}
+
+button:focus {
+  outline: 1px solid var(--navy);
+}
+
+input {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--gray4);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.header__title {
+  font-family: "Heebo", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--gray1);
+}
+
+.header__link {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* HERO */
+
+.hero {
+  margin-top: 48px;
+}
+
+.hero__header {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.hero__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--gray1);
+}
+
+.hero__subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--blue);
+}
+
+.hero__img {
+  border-radius: 18px;
+  margin-bottom: 22px;
+}
+
+.hero__content {
+  margin-left: 30px;
+  width: 80%;
+}
+
+.hero__about {
+  padding-top: 18px;
+  padding-bottom: 30px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray2);
+}
+
+.hero__inputBox {
+  width: 291px;
+  height: 47px;
+  background: var(--gray6);
+  border-radius: 12px;
+  padding: 4px 4px 4px 19px;
+  display: flex;
+}
+
+.hero__inputBox:focus-within {
+  outline: 1px solid var(--navy);
+}
+
+.hero__input {
+  flex: 1;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--gray2);
+}
+
+.hero__button {
+  width: 71px;
+  height: 39px;
+  background: var(--blue);
+  border-radius: 12px;
 }
