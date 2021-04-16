@@ -102,6 +102,12 @@ input::placeholder {
   color: var(--gray1);
 }
 
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .header__link {
   font-size: 24px;
   line-height: 36px;

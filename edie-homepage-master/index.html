@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edie homepage</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" media="(min-width: 768px)" href="styles/media.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,13 +26,21 @@
   <body>
     <header class="header">
       <h1 class="header__title">Edie</h1>
-      <nav role="navigation" class="header__nav">
-        <a href="#hero" class="header__link">Home</a>
-        <a href="#services" class="header__link">Services</a>
-        <a href="#ourWorks" class="header__link">Our Works</a>
-        <a href="#clients" class="header__link">Clients</a>
-        <a href="#contact" class="header__link">Contact</a>
-      </nav>
+      <section class="header__navWrapper">
+        <input type="checkbox" class="header__toggler" />
+        <div class="header__hamburger"><div></div></div>
+        <div class="header__menu">
+          <div>
+            <nav role="navigation" class="header__nav">
+              <a href="#hero" class="header__link">Home</a>
+              <a href="#services" class="header__link">Services</a>
+              <a href="#ourWorks" class="header__link">Our Works</a>
+              <a href="#clients" class="header__link">Clients</a>
+              <a href="#contact" class="header__link">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </section>
     </header>
     <article id="hero" class="hero">
       <header class="hero__header">
@@ -234,7 +243,10 @@
       </form>
       <p class="footer__signature">
         created by
-        <span class="footer__signature--fw700 footer__signature--underline">& Raubo</span> -
+        <span class="footer__signature--fw700 footer__signature--underline"
+          >& Raubo</span
+        >
+        -
         <span class="footer__signature--fw500">devChallenges.io</span>
       </p>
     </footer>
