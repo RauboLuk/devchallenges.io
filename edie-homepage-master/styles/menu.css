@@ -5,7 +5,7 @@
   z-index: 1;
 }
 
-.header__navWrapper .header__toggler {
+.header__toggler {
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -16,7 +16,7 @@
   opacity: 0;
 }
 
-.header__navWrapper .header__hamburger {
+.header__hamburger {
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.header__navWrapper .header__hamburger > div {
+.header__hamburger > div {
   position: relative;
   width: 100%;
   height: 2px;
@@ -42,8 +42,8 @@
   transition: all 0.4s ease;
 }
 
-.header__navWrapper .header__hamburger > div::before,
-.header__navWrapper .header__hamburger > div::after {
+.header__hamburger > div::before,
+.header__hamburger > div::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -53,29 +53,29 @@
   background: inherit;
 }
 
-.header__navWrapper .header__hamburger > div::after {
+.header__hamburger > div::after {
   top: 10px;
 }
 
-.header__navWrapper .header__toggler:checked + .header__hamburger > div {
+.header__toggler:checked + .header__hamburger > div {
   transform: rotate(135deg);
 }
 
-.header__navWrapper .header__toggler:checked + .header__hamburger > div::before,
-.header__navWrapper .header__toggler:checked + .header__hamburger > div::after {
+.header__toggler:checked + .header__hamburger > div::before,
+.header__toggler:checked + .header__hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.header__navWrapper .header__toggler:checked:hover + .header__hamburger > div {
+.header__toggler:checked:hover + .header__hamburger > div {
   transform: rotate(225deg);
 }
 
-.header__navWrapper .header__toggler:checked ~ .header__menu {
+.header__toggler:checked ~ .header__menu {
   visibility: visible;
 }
 
-.header__navWrapper .header__menu {
+.header__menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -92,4 +92,22 @@
     rgba(39, 174, 96, 0.95) 0%,
     rgba(45, 156, 219, 0.95) 100%
   );
+}
+
+@media (min-width: 768px) {
+  .header__navWrapper {
+    all: initial;
+  }
+  .header__toggler,
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__menu {
+    all: initial;
+  }
+
+  .header__nav {
+    all: initial;
+  }
 }

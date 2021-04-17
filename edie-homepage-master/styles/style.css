@@ -76,10 +76,14 @@ input {
   border: 0;
   background-color: inherit;
   outline: none;
+  max-width: 80%;
 }
 
 input::placeholder {
   color: var(--gray4);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .material-icons.md-light,
@@ -152,6 +156,7 @@ input::placeholder {
   padding-bottom: 30px;
   font-size: 12px;
   line-height: 18px;
+  font-weight: 400;
   color: var(--gray2);
 }
 
@@ -162,6 +167,7 @@ input::placeholder {
   border-radius: 12px;
   padding: 4px 4px 4px 19px;
   display: flex;
+  max-width: 100%;
 }
 
 .hero__inputBox:focus-within {
@@ -202,13 +208,17 @@ input::placeholder {
 
 .services__items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 75px;
+  justify-content: center;
 }
 
 .services__item {
   padding: 49px 34px 43px;
   box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  min-width: 280px;
+  width: min(340px, 40vw);
   border-radius: 24px;
 }
 
@@ -234,6 +244,7 @@ input::placeholder {
   margin-top: 35px;
   font-size: 24px;
   line-height: 36px;
+  font-weight: 700;
   color: var(--gray1);
 }
 
@@ -241,6 +252,7 @@ input::placeholder {
   margin-top: 24px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: var(--gray2);
 }
 
@@ -342,6 +354,7 @@ input::placeholder {
   margin-top: 14px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: var(--gray2);
 }
 
@@ -352,6 +365,7 @@ input::placeholder {
     "img1 img2"
     "img1 img3";
   gap: 9px;
+  justify-content: flex-start;
 }
 
 .team__img {
@@ -413,10 +427,10 @@ input::placeholder {
 
 /* FOOTER */
 
-.footer {
+.footer__content {
   margin: 100px -14px -50px -10px;
-  background: var(--navy);
   padding: 36px 40px 24px;
+  background: var(--navy);
 }
 
 .footer__nav {
@@ -429,7 +443,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 200%;
   width: max-content;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .footer__social {
@@ -465,6 +479,7 @@ input::placeholder {
   border-radius: 12px;
   padding: 4px 4px 4px 19px;
   display: flex;
+  max-width: 100%;
 }
 
 .footer__inputBox:focus-within {
